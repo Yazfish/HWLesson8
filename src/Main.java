@@ -13,9 +13,9 @@ public class Main {
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей.");
         System.out.println("\n Задача 2 \n");
-        int maxWeeklySalary = 0;
-        int minWeeklySalary = 1000;
-        for (int i = 0; i < weeklySalary.length; i++) {
+        int maxWeeklySalary = weeklySalary[0];
+        int minWeeklySalary = weeklySalary[0];
+        for (int i = 1; i < weeklySalary.length; i++) {
             if (weeklySalary[i] > maxWeeklySalary) {
                 maxWeeklySalary = weeklySalary[i];
             }
