@@ -5,7 +5,6 @@
 //
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("Задача 1 \n");
         int[] weeklySalary = {11, 20, 30, 20, 53};
         double sum = 0d;
@@ -13,7 +12,6 @@ public class Main {
             sum += element;
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей.");
-
         System.out.println("\n Задача 2 \n");
         int maxWeeklySalary = 0;
         int minWeeklySalary = 1000;
@@ -28,24 +26,17 @@ public class Main {
         System.out.println("Минимальная сумма трат за неделю " +
                 "составила " + minWeeklySalary + " рублей. " +
                 "\nМаксимальная сумма трат за неделю составила " + maxWeeklySalary + " рублей.");
-
         System.out.println("\n Задача 3 \n");
         int weeklySalarySize = weeklySalary.length;
         double sum1;
         sum1 = sum / weeklySalarySize;
         System.out.println("Средняя сумма трат за месяц составила " + sum1 + " рублей.");
-
         System.out.println("\n Задача 4 \n");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        int reverseFullNameSize = reverseFullName.length;
-        for (int i = reverseFullNameSize-1; i < reverseFullName.length; i--) {
-            if (i == reverseFullName.length - reverseFullNameSize) {
-                System.out.println(reverseFullName[i]);
-                break;
-            }
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
     }
-
 }
+
 
